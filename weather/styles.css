@@ -1,0 +1,98 @@
+ :root {
+      --bg-light: #e0f7fa;
+      --bg-dark: #1c1c1c;
+      --text-light: #1c1c1c;
+      --text-dark: #f0f0f0;
+      --card-light: white;
+      --card-dark: #333;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      margin: 0;
+      padding: 20px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    body.light {
+      background: var(--bg-light);
+      color: var(--text-light);
+    }
+
+    body.dark {
+      background: var(--bg-dark);
+      color: var(--text-dark);
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      padding: 25px;
+      border-radius: 12px;
+      background: var(--card-light);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+      transition: background 0.3s;
+    }
+
+    body.dark .container {
+      background: var(--card-dark);
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px ;
+      font-size: 16px;
+      border: 2px solid #007BFF;
+      border-radius: 8px;
+      margin-bottom: 12px;
+      
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #007BFF;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .toggle {
+      text-align: right;
+      margin-bottom: 15px;
+    }
+
+    .toggle input {
+      transform: scale(1.2);
+      margin-right: 8px;
+    }
+
+    .weather-info {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .icon {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .data-row {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px 0;
+    }
+
+    canvas {
+      margin-top: 30px;
+    }
